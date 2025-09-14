@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>RESTAURANT MENU</title>
+  <style>
+   body {
+  background-image: url("background.jpg");
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111111;
+  padding: 40px;
+}
+    .menu-card {
+      background-color: rgba(236, 203, 130, 0.9);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: darkorange;
+    }
+
+    h2 {
+      color: #C21807;
+      margin-top: 30px;
+    }
+
+    h3 {
+      color: rgb(0, 0, 0);
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    ul li span {
+      float: right;
+      font-weight: bold;
+    }
+
+    .nested {
+      margin-left: 20px;
+      font-size: 0.95em;
+      color: #333;
+    }
+
+    .tagline {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-card">
+    <h1><b>THE SAKURA🌿& DRAGON 🐦‍🔥</b></h1>
+    <p class="tagline">“Where the Zen of Japan meets the Fire of China”</p>
+    <h3><b>RESTAURANT MENU</b></h3>
+
+    <h2>🍱 Japanese Dishes</h2>
+    <ul>
+      <li>Sushi Roll (4 pcs) <span>₹180</span></li>
+      <li>Chicken Teriyaki Bowl <span>₹200</span>
+        <ul class="nested">
+          <li>➡ With extra sauce – ₹220</li>
+          <li>➡ With rice combo – ₹250</li>
+        </ul>
+      </li>
+      <li>Tempura Udon Noodles <span>₹160</span></li>
+      <li>Miso Soup <span>₹90</span></li>
+      <li>Vegetable Gyoza (6 pcs) <span>₹120</span></li>
+    </ul>
+
+    <h2>🥡 Chinese Dishes</h2>
+    <ul>
+      <li>Veg Hakka Noodles <span>₹120</span>
+        <ul class="nested">
+          <li>➡ With mushrooms – ₹140</li>
+          <li>➡ Spicy version – ₹150</li>
+        </ul>
+      </li>
+      <li>Chicken Manchurian (Dry) <span>₹180</span></li>
+      <li>Sweet & Sour Pork <span>₹200</span></li>
+      <li>Spring Rolls (4 pcs) <span>₹100</span></li>
+      <li>Schezwan Fried Rice <span>₹140</span></li>
+    </ul>
+  </div>
+</body>
+</html>
