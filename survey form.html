@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 5px;
+    }
+    input[type="submit"] {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    input[type="submit"]:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Survey Form</h2>
+    <label>Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Age:</label>
+    <input type="number" name="age">
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other 
+
+    <label>Which topics interest you?</label>
+    <input type="checkbox" name="topic" value="Technology"> Technology 
+    <input type="checkbox" name="topic" value="Sports"> Sports 
+    <input type="checkbox" name="topic" value="Music"> Music 
+
+    <label>Rate your satisfaction:</label>
+    <select name="satisfaction">
+      <option>Excellent</option>
+      <option>Good</option>
+      <option>Average</option>
+      <option>Poor</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

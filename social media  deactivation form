@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitter Deactivation</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    .form-box {
+      background: #fff;
+      padding: 15px;
+      width: 300px;
+      margin: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1da1f2;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 5px;
+    }
+
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 8px;
+      background-color: #e0245e;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-box">
+    <h2>Deactivate Twitter</h2>
+    <form>
+      <label>Username:</label>
+      <input type="text" required>
+
+      <label>Email:</label>
+      <input type="email" required>
+
+      <label>Reason (optional):</label>
+      <textarea rows="3"></textarea>
+
+      <label>
+        <input type="checkbox" required> Confirm deactivation
+      </label>
+
+      <button type="submit">Deactivate</button>
+    </form>
+  </div>
+
+</body>
+</html>
