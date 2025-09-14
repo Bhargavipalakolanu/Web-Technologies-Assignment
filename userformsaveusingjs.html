@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    form {
+      width: 300px;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>User Registration Form</h2>
+  <form id="userForm">
+    <label>Name:</label>
+    <input type="text" id="name" required>
+
+    <label>Email:</label>
+    <input type="email" id="email" required>
+
+    <label>Password:</label>
+    <input type="password" id="password" required>
+
+    <button type="button" onclick="save()">Save</button>
+  </form>
+
+  <script>
+    function save() {
+      // Get values from inputs
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+
+      // Create object
+      let user = {
+        name: name,
+        email: email,
+        password: password
+      };
+
+      // Store in localStorage (like a mini-database in browser)
+      localStorage.setItem("userData", JSON.stringify(user));
+
+      // Show confirmation
+      alert("User details saved successfully!");
+
+      // Log to console (for checking)
+      console.log("Saved User:", user);
+    }
+  </script>
+
+</body>
+</html>

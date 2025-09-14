@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Map Example</title>
+</head>
+<body>
+
+<h2>Clickable Image Map Example</h2>
+<p>Click on Google or YouTube areas inside the image below 👇</p>
+
+<!-- Image with usemap -->
+<img src="IMAGE.png" usemap="#samplemap" alt="Clickable Map Example">
+
+<!-- Define map -->
+<map name="samplemap">
+  <!-- Rectangle hotspot (Google) -->
+  <area shape="rect" coords="50,50,250,200" href="https://www.google.com" alt="Google" target="_blank">
+
+  <!-- Circle hotspot (YouTube) -->
+  <area shape="circle" coords="450,200,80" href="https://www.youtube.com" alt="YouTube" target="_blank">
+</map>
+
+</body>
+</html>
